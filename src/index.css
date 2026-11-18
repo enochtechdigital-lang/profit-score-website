@@ -1,0 +1,1444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #090b10;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: #090b10;
+  padding-bottom: 85px;
+}
+
+/* HEADER */
+
+.app-header {
+  height: 70px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #10131a;
+  border-bottom: 1px solid #20242d;
+}
+
+.brand h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.brand span {
+  color: #d5b45b;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-actions button {
+  background: transparent;
+  color: #c4c7ce;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px 5%;
+}
+
+/* BOTTOM NAVIGATION */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: #10131a;
+  border-top: 1px solid #252a34;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  color: #858b98;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.nav-item.active {
+  color: #d5b45b;
+}
+
+.nav-item svg {
+  stroke-width: 1.8;
+}
+
+/* HOME PAGE */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* BALANCE CARD */
+
+.balance-card {
+  background: #151922;
+  border: 1px solid #252b36;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.balance-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a5aab4;
+}
+
+.visibility-button {
+  background: transparent;
+  color: #a5aab4;
+}
+
+.balance-card h1 {
+  font-size: clamp(25px, 5vw, 34px);
+  margin: 18px 0 12px;
+}
+
+.balance-change {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #25bd83;
+  font-size: 14px;
+}
+
+/* QUICK ACTIONS */
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #c5c8cf;
+  font-size: 12px;
+}
+
+.action-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  background: #1b202a;
+  border: 1px solid #303744;
+  color: #d5b45b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PROMOTIONAL BANNER */
+
+.promo-banner {
+  background: #28251c;
+  border: 1px solid #51452b;
+  border-radius: 16px;
+  padding: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #d5b45b;
+}
+
+.promo-banner h2 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+.promo-banner p {
+  font-size: 12px;
+}
+
+.promo-label {
+  letter-spacing: 2px;
+}
+
+/* POPULAR CRYPTOCURRENCIES */
+
+.popular-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-heading h2 {
+  font-size: 17px;
+}
+
+.section-heading span {
+  display: flex;
+  align-items: center;
+  color: #d5b45b;
+  font-size: 12px;
+}
+
+.crypto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.crypto-item {
+  background: #151922;
+  border: 1px solid #252b36;
+  border-radius: 13px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coin-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #292d36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d5b45b;
+  font-size: 23px;
+}
+
+.coin-info h3,
+.coin-price h3 {
+  font-size: 14px;
+}
+
+.coin-info p {
+  color: #858b98;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.coin-price {
+  text-align: right;
+}
+
+.coin-price p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.positive {
+  color: #25bd83;
+}
+
+.negative {
+  color: #ef6262;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 20px 16px;
+  }
+
+  .balance-card {
+    padding: 20px;
+  }
+
+  .promo-banner {
+    padding: 18px;
+  }
+
+  .promo-banner h2 {
+    font-size: 18px;
+  }
+
+  .crypto-item {
+    padding: 13px 10px;
+  }
+
+  .coin-price h3 {
+    font-size: 12px;
+  }
+}
+
+/* PROFIT SCORE BRANDING */
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  width: 155px;
+  height: 48px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.coin-image {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.positive {
+  color: #16c784;
+}
+
+.negative {
+  color: #ea3943;
+}
+
+/* MARKET PAGE */
+
+.market-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.market-heading h1 {
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+
+.market-heading p {
+  color: #9298a5;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.market-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #151923;
+  border: 1px solid #252b38;
+  border-radius: 12px;
+  padding: 14px;
+  color: #9298a5;
+}
+
+.market-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-size: 14px;
+}
+
+.market-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.summary-card {
+  background: #151923;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #252b38;
+}
+
+.summary-card span {
+  color: #9298a5;
+  font-size: 12px;
+}
+
+.summary-card h2 {
+  margin-top: 8px;
+  font-size: 21px;
+}
+
+.market-list-section > h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.market-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.market-coin-card {
+  background: #151923;
+  border: 1px solid #252b38;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.market-coin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.market-coin-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.market-coin-info img {
+  width: 38px;
+  height: 38px;
+}
+
+.market-coin-info h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.market-coin-info span {
+  color: #9298a5;
+  font-size: 12px;
+}
+
+.market-price {
+  text-align: right;
+}
+
+.market-price h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.market-price span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.market-coin-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #252b38;
+}
+
+.market-coin-details span {
+  color: #9298a5;
+  font-size: 11px;
+}
+
+.market-coin-details p {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.market-trade-button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: #d6ad55;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.market-trade-button:hover {
+  background: #edc66f;
+}
+
+.market-message,
+.market-error {
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.market-message {
+  color: #9298a5;
+}
+
+.market-error {
+  color: #ff6b6b;
+}
+
+@media (min-width: 700px) {
+  .market-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* TRADE PAGE */
+
+.trade-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trade-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trade-heading h1 {
+  font-size: 24px;
+}
+
+.trade-heading p {
+  color: #9298a5;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.demo-badge {
+  background: #3b3019;
+  color: #e5bd65;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.trade-pair-card,
+.trade-chart,
+.trade-form-card,
+.order-history {
+  background: #151923;
+  border: 1px solid #252b38;
+  border-radius: 14px;
+  padding: 17px;
+}
+
+.trade-pair-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.selected-coin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selected-coin img {
+  width: 38px;
+  height: 38px;
+}
+
+.selected-coin h2 {
+  font-size: 18px;
+}
+
+.selected-coin p {
+  color: #9298a5;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.trade-pair-selector select {
+  background: #202634;
+  color: white;
+  border: 1px solid #343c4b;
+  padding: 9px;
+  border-radius: 7px;
+  max-width: 115px;
+}
+
+.trade-market-price {
+  margin-top: 22px;
+}
+
+.trade-market-price h1 {
+  font-size: 27px;
+  margin-bottom: 9px;
+}
+
+.trade-market-price span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.trade-market-price small {
+  color: #9298a5;
+  margin-left: 4px;
+}
+
+.trade-market-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  border-top: 1px solid #252b38;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.trade-market-stats span {
+  font-size: 10px;
+  color: #9298a5;
+}
+
+.trade-market-stats p {
+  font-size: 11px;
+  margin-top: 7px;
+  overflow-wrap: anywhere;
+}
+
+.chart-heading,
+.order-history-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-heading h3,
+.trade-form-card h2,
+.order-history-heading h2 {
+  font-size: 17px;
+}
+
+.chart-heading span {
+  color: #9298a5;
+  font-size: 11px;
+}
+
+.chart-placeholder {
+  height: 190px;
+  margin-top: 15px;
+  background: #10141d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #9298a5;
+}
+
+.chart-placeholder p {
+  font-size: 12px;
+}
+
+.trade-type-switch,
+.order-type-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 17px;
+}
+
+.trade-type-switch button,
+.order-type-switch button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #222936;
+  color: #9298a5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.trade-type-switch .buy-active {
+  background: #16a675;
+  color: white;
+}
+
+.trade-type-switch .sell-active {
+  background: #d84d5a;
+  color: white;
+}
+
+.order-type-switch .selected {
+  background: #d6ad55;
+  color: #111;
+}
+
+.trade-input-group {
+  margin-top: 20px;
+}
+
+.trade-input-group label {
+  display: block;
+  font-size: 12px;
+  color: #9298a5;
+  margin-bottom: 9px;
+}
+
+.trade-input-group input {
+  width: 100%;
+  padding: 14px;
+  background: #10141d;
+  border: 1px solid #303746;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.trade-input-group input:focus {
+  border-color: #d6ad55;
+}
+
+.estimated-value {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 15px 0;
+  border-top: 1px solid #252b38;
+  font-size: 12px;
+}
+
+.estimated-value span {
+  color: #9298a5;
+}
+
+.estimated-value strong {
+  text-align: right;
+}
+
+.place-order-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.place-order-button.buy {
+  background: #16a675;
+}
+
+.place-order-button.sell {
+  background: #d84d5a;
+}
+
+.place-order-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.demo-notice {
+  text-align: center;
+  color: #9298a5;
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.order-tabs {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  margin-top: 18px;
+  border-bottom: 1px solid #303746;
+}
+
+.order-tabs button {
+  white-space: nowrap;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  color: #9298a5;
+  font-size: 12px;
+}
+
+.order-tabs .active {
+  color: #e5bd65;
+  border-bottom: 2px solid #e5bd65;
+}
+
+.empty-orders {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #9298a5;
+}
+
+.empty-orders p {
+  font-size: 12px;
+}
+
+/* WALLET PAGE */
+
+.wallet-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.wallet-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-heading h1 {
+  font-size: 24px;
+}
+
+.wallet-heading p {
+  color: #9298a5;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.wallet-balance-card {
+  background: linear-gradient(135deg, #242016, #151923);
+  border: 1px solid #66532e;
+  border-radius: 15px;
+  padding: 22px;
+}
+
+.wallet-balance-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c0b9a7;
+  font-size: 13px;
+}
+
+.wallet-balance-heading button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.wallet-balance-card h1 {
+  font-size: 29px;
+  margin: 22px 0 10px;
+  overflow-wrap: anywhere;
+}
+
+.wallet-balance-card > p {
+  font-size: 11px;
+  color: #aaa18e;
+}
+
+.wallet-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.wallet-actions button {
+  background: #151923;
+  border: 1px solid #252b38;
+  border-radius: 12px;
+  padding: 15px 5px;
+  color: #d6ad55;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.wallet-actions button span {
+  color: white;
+  font-size: 11px;
+}
+
+.wallet-assets {
+  background: #151923;
+  border: 1px solid #252b38;
+  border-radius: 14px;
+  padding: 17px;
+}
+
+.wallet-assets-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.wallet-assets-heading h2 {
+  font-size: 17px;
+}
+
+.wallet-assets-heading span {
+  color: #d6ad55;
+  font-size: 12px;
+}
+
+.wallet-asset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid #252b38;
+}
+
+.wallet-asset-item:last-child {
+  border-bottom: none;
+}
+
+.wallet-asset-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.wallet-asset-info img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.wallet-asset-info h3,
+.wallet-asset-balance h3 {
+  font-size: 13px;
+}
+
+.wallet-asset-info p {
+  color: #9298a5;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.wallet-asset-balance {
+  text-align: right;
+  min-width: 0;
+}
+
+.wallet-asset-balance h3 {
+  overflow-wrap: anywhere;
+}
+
+.wallet-asset-balance p {
+  color: #9298a5;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.wallet-message {
+  color: #9298a5;
+  font-size: 13px;
+  padding: 15px 0;
+}
+
+.wallet-demo-notice {
+  color: #9298a5;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* DEPOSIT PAGES */
+
+.deposit-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.deposit-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.deposit-heading > button {
+  background: #202634;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.deposit-heading h1 {
+  font-size: 22px;
+}
+
+.deposit-heading p {
+  color: #9298a5;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.deposit-warning {
+  display: flex;
+  gap: 12px;
+  background: #2b2418;
+  border: 1px solid #70572c;
+  border-radius: 11px;
+  padding: 15px;
+  color: #e5bd65;
+}
+
+.deposit-warning p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+.deposit-assets,
+.deposit-address-card {
+  background: #151923;
+  border: 1px solid #252b38;
+  border-radius: 14px;
+  padding: 17px;
+}
+
+.deposit-assets h2,
+.deposit-address-card h3 {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.deposit-asset {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #252b38;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.deposit-asset:last-child {
+  border-bottom: none;
+}
+
+.deposit-asset-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #302819;
+  color: #e5bd65;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.deposit-asset-info {
+  flex: 1;
+}
+
+.deposit-asset-info h3 {
+  font-size: 14px;
+}
+
+.deposit-asset-info p,
+.deposit-coin-card p {
+  color: #9298a5;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.deposit-coin-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: #151923;
+  border: 1px solid #252b38;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.deposit-coin-card h2 {
+  font-size: 16px;
+}
+
+.deposit-qr-placeholder {
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  background: #252b38;
+  border: 1px dashed #d6ad55;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #9298a5;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.address-placeholder {
+  background: #10141d;
+  border: 1px solid #303746;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  color: #9298a5;
+  font-size: 12px;
+}
+
+.copy-address-button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 13px;
+  background: #d6ad55;
+  border: none;
+  border-radius: 8px;
+  color: #111;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy-address-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.address-status {
+  color: #e5bd65;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* HISTORY PAGE */
+
+.history-page {
+  padding: 24px 20px 100px;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.history-page .page-heading {
+  margin-bottom: 28px;
+}
+
+.history-page .page-heading h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.history-page .page-heading p {
+  color: #929292;
+  font-size: 13px;
+}
+
+.history-tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+}
+
+.history-tabs button {
+  background: #171717;
+  color: #999;
+  border: 1px solid #292929;
+  padding: 11px 18px;
+  border-radius: 25px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.history-tabs button.active {
+  background: #d6ad55;
+  color: #111;
+  border-color: #d6ad55;
+  font-weight: 600;
+}
+
+.history-list {
+  background: #141414;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  padding: 25px 15px;
+}
+
+.empty-history {
+  text-align: center;
+  padding: 45px 10px;
+  color: #d6ad55;
+}
+
+.empty-history h3 {
+  color: #ffffff;
+  margin: 15px 0 8px;
+  font-size: 17px;
+}
+
+.empty-history p {
+  color: #888;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* AUTHENTICATION PAGES */
+
+.auth-page {
+  min-height: 100vh;
+  background: #090909;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 18px;
+  color: #fff;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #141414;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  padding: 35px 25px;
+}
+
+.auth-logo {
+  width: 180px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 25px;
+}
+
+.auth-card h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: #929292;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.auth-card form > label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 9px;
+  color: #ddd;
+}
+
+.auth-card form > input,
+.password-input input {
+  width: 100%;
+  height: 48px;
+  background: #202020;
+  border: 1px solid #333;
+  border-radius: 9px;
+  padding: 0 13px;
+  color: #fff;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.auth-card input:focus {
+  border-color: #d6ad55;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-right: 45px;
+}
+
+.password-input button {
+  position: absolute;
+  right: 12px;
+  top: 13px;
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0 25px;
+  font-size: 12px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #aaa;
+}
+
+.auth-options a,
+.auth-footer a {
+  color: #d6ad55;
+  text-decoration: none;
+}
+
+.auth-submit {
+  width: 100%;
+  height: 49px;
+  background: #d6ad55;
+  color: #111;
+  border: none;
+  border-radius: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.auth-submit:hover {
+  background: #e5bd69;
+}
+
+.auth-footer {
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+/* CANDLESTICK CHART */
+
+.candlestick-section {
+  background: #151923;
+  border: 1px solid #252b38;
+  border-radius: 14px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.chart-header h3 {
+  font-size: 16px;
+}
+
+.demo-chart-label {
+  font-size: 10px;
+  color: #d6ad55;
+  border: 1px solid #d6ad55;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.chart-timeframes {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+}
+
+.chart-timeframes button {
+  background: transparent;
+  border: none;
+  color: #9298a5;
+  padding: 7px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.chart-timeframes .active-timeframe {
+  background: #d6ad55;
+  color: #111;
+  border-radius: 5px;
+}
+
+.candlestick-chart {
+  width: 100%;
+  height: 350px;
+}
