@@ -86,12 +86,12 @@ function AdminLayout() {
           </button>
 
           <div>
-            <h3>Administration</h3>
+            <h3>Admin</h3>
             <p>Manage your Profit Score platform</p>
           </div>
 
           <div className="admin-profile">
-            <span>AD</span>
+            <span>Levi</span>
             <div>
               <strong>Administrator</strong>
               <small>Admin Account</small>
